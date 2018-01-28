@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Carousel from './Components/Carousel'
 
 class App extends Component {
-  componentDidMount () {
-    
-  }
 
   render() {
     return (
@@ -13,6 +10,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">News Flip</h1>
         </header>
+        <Carousel/>
       </div>
     );
   }
