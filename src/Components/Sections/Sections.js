@@ -21,9 +21,10 @@ class Sections extends Component {
   }
 
   render() {
-    let categories, sections
-    this.state.allSources.map(source => {
-      console.log(source)
+    console.log(this.state.allSources)
+    let categories = []
+    let sections = []
+    this.state.allSources.map( source => {
       if( !(categories.includes(source.category))) {
         categories.push(source.category)
         sections[source.category][0] = source
@@ -36,9 +37,9 @@ class Sections extends Component {
 
     return (
       <div>
-        {
+        {/* {
           categories.map( category => <div key={category}><h3>{category}</h3><div><Carousel sources={sections[category]}/></div></div>)
-        }
+        } */}
       </div>
     )
   }
