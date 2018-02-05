@@ -11,7 +11,7 @@ An under development app that helps you organise your news resources.
 - Node
 - Express
 
-(Find the backend code in a repo named Backend-NewsApp)
+(Find the backend code in a repository: Backend-NewsApp)
 
 used BBC news api for fetching the various resources and required data
 
