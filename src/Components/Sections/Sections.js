@@ -58,6 +58,9 @@ class Sections extends Component {
             justify-content: flex-start;
             width: calc(100% / 6);
           }
+          h3 {
+            text-transform: uppercase;
+          }
         `}</style>
       </div>
     )
