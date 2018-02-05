@@ -39,9 +39,9 @@ class Sections extends Component {
       }
     })
 
-    console.log(sections)
     return (
       <div>
+      <div className="source-container">
         {
           categories.map( category => (
             <div>
@@ -50,6 +50,15 @@ class Sections extends Component {
             </div>
           ))
         }
+      </div>
+        <style jsx>{`
+          .source-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            width: calc(100% / 6);
+          }
+        `}</style>
       </div>
     )
   }
