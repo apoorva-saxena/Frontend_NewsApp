@@ -2,12 +2,12 @@
 
 An under development app that helps you organise your news resources.
 
-##Technologies used
+## Technologies used
 
-####Front End
+#### Front End
 - React
 
-####Back end
+#### Back end
 - Node
 - Express
 
