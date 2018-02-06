@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import CarouselItem from '../CarouselItem'
+import PropTypes from 'prop-types'
 
 class Carousel extends Component {
   render() {
@@ -29,6 +30,10 @@ class Carousel extends Component {
       </div>
     )
   }
+}
+
+Carousel.propTypes = {
+  sources: PropTypes.object
 }
 
 export default Carousel
