@@ -27,6 +27,8 @@ $ yarn start
 - Add images from a different api
 - Make categories clickable
 - Add search
+- Add propTypes
+
 
 <img width="1678" alt="screen shot 2018-02-05 at 21 28 12" src="https://user-images.githubusercontent.com/13749603/35830205-52aaf95c-0abd-11e8-8c9f-a1eebba83620.png">
 
