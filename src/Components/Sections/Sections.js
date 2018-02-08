@@ -65,7 +65,6 @@ class Sections extends Component {
             }
             a:hover {
               color: #05259D;
-              text-decoration: underline;
             }
              `
           }</style>

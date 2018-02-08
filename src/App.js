@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Sections from './Components/Sections'
+import {BrowserRouter as Router, Route, NavLink, Link, Switch} from 'react-router-dom'
 
 class App extends Component {
 
@@ -14,6 +15,14 @@ class App extends Component {
       </div>
     );
   }
+}
+
+class App extends Component{
+  <Router>
+    <div>
+      
+    </div>
+  </Router>
 }
 
 export default App;
