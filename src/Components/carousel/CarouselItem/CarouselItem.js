@@ -12,16 +12,8 @@ class CarouselItem extends Component {
       url,
       language,
       country,
-      urlsToLogos
     } = this.props
     let imageUrl = backupImage
-    if (urlsToLogos.small) {
-      imageUrl = urlsToLogos.small
-    } else if (urlsToLogos.medium) {
-      imageUrl = urlsToLogos.medium
-    } else if (urlsToLogos.large) {
-      imageUrl = urlsToLogos.large
-    }
     return (
       <div>
         <div className="news-container">

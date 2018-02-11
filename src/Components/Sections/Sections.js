@@ -40,9 +40,11 @@ class Sections extends Component {
         <div className="source-container">
           {categories.map(category => (
             <div>
+            <div className="category-header">
               <h3 key={category}>
                 <a href={"/"+category}>{category}</a>
               </h3>
+              </div>
               <Carousel sources={sections[category]}/>
             </div>
           ))
@@ -69,6 +71,11 @@ class Sections extends Component {
             }
             a:hover {
               color: #05259D;
+            }
+
+            .category-header {
+              display:flex;
+              justify-content: center;
             }
              `
           }</style>

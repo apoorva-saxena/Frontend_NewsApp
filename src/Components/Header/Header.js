@@ -10,7 +10,7 @@ class Header extends Component {
         <header className="header">
           <h1 className="title">{name}</h1>
           {name !== "Home" && <div className="home-link-container">
-            <a href={"/"}><img src={homeImage}/></a>
+            <a href={"/"}><img className="home-image"src={homeImage}/></a>
           </div>
           }
         </header>
@@ -44,7 +44,7 @@ class Header extends Component {
               
             }
 
-            img {
+            .home-image {
               height: 30px;
               width: 30px;
             }

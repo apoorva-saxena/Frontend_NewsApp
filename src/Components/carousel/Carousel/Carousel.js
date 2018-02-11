@@ -4,10 +4,10 @@ import PropTypes from 'prop-types'
 
 class Carousel extends Component {
   render() {
-    const {sources} = this.props
+    const {sources, type} = this.props
     return (
       <div>
-        <div className="carousel-container">
+        <div className={type ? "carousel-container-row" : "carousel-container"}>
           {sources.map(source => <CarouselItem
             key={source.id}
             id={source.id}
@@ -24,6 +24,11 @@ class Carousel extends Component {
             ` .carousel-container {
               display: flex;
               flex-direction: column;
+            }
+            .carousel-container-row {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
             }
              `
           }</style>
