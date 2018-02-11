@@ -30,7 +30,10 @@ $ yarn start
 - Add propTypes
 
 
-<img width="1678" alt="screen shot 2018-02-05 at 21 28 12" src="https://user-images.githubusercontent.com/13749603/35830205-52aaf95c-0abd-11e8-8c9f-a1eebba83620.png">
+<img width="1680" alt="screen shot 2018-02-11 at 19 37 38" src="https://user-images.githubusercontent.com/13749603/36077461-2b5f1464-0f63-11e8-8498-67a3e6de29d3.png">
+
+
+<img width="1680" alt="screen shot 2018-02-11 at 19 38 05" src="https://user-images.githubusercontent.com/13749603/36077462-2c8e0f84-0f63-11e8-8eb7-a1700ccc11cc.png">
 
 
 
