@@ -22,12 +22,12 @@ class Home extends Component {
               padding: 20px;
               color: white;
             }
-            
+
             .home-title {
-              font - size: 1.25e m;
+              font-size: 1.25em;
               font: reithsans;
               float: left;
-              text - transform: uppercase;
+              text-transform: uppercase;
             }
              `
           }</style>
