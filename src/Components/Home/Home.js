@@ -22,6 +22,7 @@ class Home extends Component {
               padding: 20px;
               color: white;
             }
+            
             .home-title {
               font - size: 1.25e m;
               font: reithsans;

@@ -36,12 +36,12 @@ class Sections extends Component {
       })
 
     return (
-      <div>
+      <div className="container">
         <div className="source-container">
           {categories.map(category => (
             <div>
               <h3 key={category}>
-                <a href={category}>{category}</a>
+                <a href={"/"+category}>{category}</a>
               </h3>
               <Carousel sources={sections[category]}/>
             </div>
@@ -50,7 +50,11 @@ class Sections extends Component {
         </div>
         <style jsx>
           {
-            ` .source-container {
+            ` 
+            .container {
+              display: inline-block;
+            }
+            .source-container {
               display: flex;
               flex-direction: row;
               justify-content: flex-start;
