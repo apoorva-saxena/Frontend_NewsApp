@@ -60,7 +60,7 @@ class Sections extends Component {
               display: flex;
               flex-direction: row;
               justify-content: flex-start;
-              width: calc(100% / 6);
+              width: calc(100% / 7);
             }
             h3 {
               text-transform: uppercase;

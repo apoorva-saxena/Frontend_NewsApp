@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import backupImage from '../../../images/news.jpg'
 import PropTypes from 'prop-types'
 
 class CarouselItem extends Component {
@@ -13,12 +12,14 @@ class CarouselItem extends Component {
       language,
       country,
     } = this.props
-    let imageUrl = backupImage
+    const imageUrl = url.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "").split('/')[0]
+    console.log(imageUrl)
+    console.log.url
     return (
       <div>
         <div className="news-container">
           <a href={url}>
-            <img src={backupImage}/>
+            <img src={"https://logo.clearbit.com/" + imageUrl}/>
             <div className="description">{description}</div>
             <div className="name">{name}</div>
           </a>
