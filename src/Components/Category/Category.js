@@ -1,10 +1,12 @@
 import React, {Component} from 'react'
+import Header from '../Header'
 
 class Category extends Component {
   render() {
-    console.log(this.props.match.params.name)
     return (
-      <div>{this.props.match.params.name}</div>
+      <div>
+        <Header name={this.props.match.params.name}/>
+      </div>
     )
   }
 }
