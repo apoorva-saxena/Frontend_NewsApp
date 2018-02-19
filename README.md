@@ -27,6 +27,8 @@ $ yarn start
 - Add search
 - Add propTypes
 - Add Latest News Section
+- Make dropdown fast
+
 
 ## APIs used
 - News and Sources: https://newsapi.org/s/bbc-news-api
