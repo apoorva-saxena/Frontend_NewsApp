@@ -11,7 +11,7 @@ class Header extends Component {
           {name !== "Latest News" && <div className="latest-news">
             <a href="/latestNewsUpdate">
               <button>
-                <span className="button-text">Latest News</span>
+                <span className="button-text">Top Headlines</span>
               </button>
             </a>
           </div>}
