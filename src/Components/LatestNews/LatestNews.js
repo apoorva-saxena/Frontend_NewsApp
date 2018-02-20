@@ -21,23 +21,25 @@ class LatestNews extends Component {
   handleChange = (event) => {
     this.setState({selectedCountry: event.target.value})
     //add the link here
-    Router.push('/')
+    this
+      .props
+      .history
+      .push('/topNews/'+ event.target.value)
   }
 
-  getTopNews = (country) => {
-    console.log(country)
-    return fetch('/api/topNews/' + country.toLowerCase()).then(res => {
-      return res.json()
-    }).then(topNews => {
-      return topNews
-    }).catch(err => {
-      console.log(err)
-    })
-  }
+  // getTopNews = (country) => {
+  //   return fetch('/api/topNews/' + country.toLowerCase()).then(res => {
+  //     return res.json()
+  //   })
+  //     .then(topNews => {
+  //     return topNews
+  //   })
+  //     .catch(err => {
+  //       console.log(err)
+  //     })
+  // }
 
   render() {
-    const topNews = this.getTopNews(this.state.selectedCountry)
-    console.log(topNews)
     return (
       <div>
         <Header name="Top Headlines"/>
