@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Header from '../Header'
+import Article from '../Article'
 
 class CountryNews extends Component {
   state = {
@@ -9,23 +10,26 @@ class CountryNews extends Component {
   componentDidMount() {
     fetch('/api/topNews/' + this.props.match.params.country.toLowerCase()).then(res => {
       return res.json()
-    })
-      .then(topNews => {
+    }).then(topNews => {
       this.setState({topNews})
+    }).catch(err => {
+      console.log(err)
     })
-      .catch(err => {
-        console.log(err)
-      })
   }
 
   render() {
-    console.log(" I reach in the country news")
-    const {country} = this.props.match.params.country
-    console.log(this.state.topNews)
-    const header = "News from " + country
+    const header = "News from " + this.props.match.params.country
+    const {topNews} = this.state
+    console.log(topNews.articles)
     return (
       <div>
         <Header name={header}/>
+        Total News : {topNews.totalResults}
+        <div>
+          {topNews
+            .articles
+            .map(tn => <Article article={tn}/>)}
+        </div>
       </div>
     )
   }

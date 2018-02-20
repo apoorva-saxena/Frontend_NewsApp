@@ -10,8 +10,8 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Home}/>
       <Route exact path="/latestNewsUpdate" component={LatestNews}/>
-      <Route path="/:name" component={Category}/>
       <Route exact path="/topNews/:country" component={CountryNews}/>
+      <Route path="/:name" component={Category}/>      
     </Switch>
   </Router>
 )
