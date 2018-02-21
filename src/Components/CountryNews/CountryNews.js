@@ -25,11 +25,21 @@ class CountryNews extends Component {
       <div>
         <Header name={header}/>
         Total News : {topNews.totalResults}
-        <div>
-          {topNews
+        <div className="topNews-container">
+          {topNews && topNews
             .articles
             .map(tn => <Article article={tn}/>)}
         </div>
+        <style jsx>
+          {
+            ` 
+            .topNews-container {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+            }
+             `
+          }</style>
       </div>
     )
   }
